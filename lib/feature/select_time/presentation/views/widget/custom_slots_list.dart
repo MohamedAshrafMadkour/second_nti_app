@@ -1,4 +1,3 @@
-import 'package:doctor_app/feature/select_time/presentation/views/widget/second_select_time_view_body.dart';
 import 'package:doctor_app/feature/select_time/presentation/views/widget/uc_active_available_item.dart';
 import 'package:flutter/material.dart';
 
@@ -14,8 +13,9 @@ class _CustomSlotsListState extends State<CustomSlotsList> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.sizeOf(context).height * 0.2,
+      height: MediaQuery.sizeOf(context).height * 0.1,
       child: GridView.builder(
+        padding: const EdgeInsets.all(0),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 4,
           crossAxisSpacing: 10,

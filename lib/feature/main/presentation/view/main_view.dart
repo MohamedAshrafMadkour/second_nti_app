@@ -1,4 +1,5 @@
 import 'package:doctor_app/feature/main/presentation/view/widget/bottom_nav_bar.dart';
+import 'package:doctor_app/feature/main/presentation/view/widget/fav_section.dart';
 import 'package:doctor_app/feature/main/presentation/view/widget/home_section.dart';
 import 'package:flutter/material.dart';
 
@@ -33,15 +34,6 @@ List<Widget> _widgetOptions = <Widget>[
   const MessageSection(),
   const ChatSection(),
 ];
-
-class FavoriteSection extends StatelessWidget {
-  const FavoriteSection({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
 
 class MessageSection extends StatelessWidget {
   const MessageSection({super.key});

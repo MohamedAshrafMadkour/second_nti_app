@@ -179,4 +179,22 @@ class AppStyles {
       letterSpacing: -0.30,
     );
   }
+
+  static TextStyle textMedium14(BuildContext context) {
+    return const TextStyle(
+      fontSize: 14,
+      fontFamily: 'Rubik',
+      fontWeight: FontWeight.w500,
+      letterSpacing: -0.30,
+    );
+  }
+
+  static TextStyle textMedium15(BuildContext context) {
+    return const TextStyle(
+      fontSize: 15,
+      fontFamily: 'Rubik',
+      fontWeight: FontWeight.w500,
+      letterSpacing: -0.30,
+    );
+  }
 }

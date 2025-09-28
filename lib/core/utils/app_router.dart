@@ -2,6 +2,7 @@ import 'package:doctor_app/feature/main/presentation/view/main_view.dart';
 import 'package:doctor_app/feature/main/presentation/view/widget/custom_live_details.dart';
 import 'package:doctor_app/feature/on_boarding/presentation/view/on_boarding_view.dart';
 import 'package:doctor_app/feature/find_doctor/presentation/view/find_doctor_view.dart';
+import 'package:doctor_app/feature/popular_doctor/presentation/view/popular_doctor_view.dart';
 import 'package:doctor_app/feature/select_time/presentation/views/second_select_time_view.dart';
 import 'package:doctor_app/feature/select_time/presentation/views/first_select_time_view.dart';
 import 'package:doctor_app/feature/splash/presentation/view/splash_view.dart';
@@ -27,6 +28,8 @@ Route<dynamic> onGenerateRoute(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) => const SecondSelectTimeView(),
       );
+    case PopularDoctorView.routeName:
+      return MaterialPageRoute(builder: (context) => const PopularDoctorView());
     default:
       return MaterialPageRoute(
         builder: (context) =>

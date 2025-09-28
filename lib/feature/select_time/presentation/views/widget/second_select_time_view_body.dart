@@ -53,6 +53,19 @@ class SecondSelectTimeViewBody extends StatelessWidget {
                     ).copyWith(color: AppColors.brownColor33),
                   ),
                 ),
+                const SizedBox(height: 16),
+                const CustomSlotsList(),
+                const SizedBox(height: 24),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Evening 5 slots',
+                    style: AppStyles.textMedium16(
+                      context,
+                    ).copyWith(color: AppColors.brownColor33),
+                  ),
+                ),
+                const SizedBox(height: 16),
                 const CustomSlotsList(),
               ],
             ),
