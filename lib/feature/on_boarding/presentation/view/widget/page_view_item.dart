@@ -1,17 +1,11 @@
 import 'package:doctor_app/core/constant/app_colors.dart';
 import 'package:doctor_app/core/utils/app_styles.dart';
+import 'package:doctor_app/feature/on_boarding/data/model/on_boarding_model.dart';
 import 'package:flutter/material.dart';
 
 class PageViewItem extends StatelessWidget {
-  const PageViewItem({
-    required this.image,
-    required this.title,
-    required this.description,
-    super.key,
-  });
-  final String image;
-  final String title;
-  final String description;
+  const PageViewItem({required this.onBoardingModel, super.key});
+  final OnBoardingModel onBoardingModel;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -19,13 +13,13 @@ class PageViewItem extends StatelessWidget {
         Image.asset(
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height * 0.4,
-          image,
+          onBoardingModel.image,
         ),
         const SizedBox(height: 85),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Text(
-            title,
+            onBoardingModel.title,
             textAlign: TextAlign.center,
             style: AppStyles.textMedium28(
               context,
@@ -36,7 +30,7 @@ class PageViewItem extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Text(
-              description,
+              onBoardingModel.description,
               textAlign: TextAlign.center,
               overflow: TextOverflow.ellipsis,
               maxLines: 3,

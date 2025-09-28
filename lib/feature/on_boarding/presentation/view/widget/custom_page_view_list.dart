@@ -13,11 +13,7 @@ class CustomPageViewList extends StatelessWidget {
       controller: pageController,
       itemCount: onBoardingList.length,
       itemBuilder: (context, index) {
-        return PageViewItem(
-          description: onBoardingList[index].description,
-          image: onBoardingList[index].image,
-          title: onBoardingList[index].title,
-        );
+        return PageViewItem(onBoardingModel: onBoardingList[index]);
       },
     );
   }
