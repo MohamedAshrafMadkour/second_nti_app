@@ -12,6 +12,10 @@ class AppImages {
   static const String imagesFirstOnBoardingImagePng =
       "asset/images/first_on_boarding_image_png.png";
 
+  /// Assets for imagesMap
+  /// asset/images/map.png
+  static const String imagesMap = "asset/images/map.png";
+
   /// Assets for imagesSecondOnBoardingBackground
   /// asset/images/second_on_boarding_background.png
   static const String imagesSecondOnBoardingBackground =
@@ -46,6 +50,10 @@ class AppImages {
   /// Assets for imagesTest13
   /// asset/images/test13.png
   static const String imagesTest13 = "asset/images/test13.png";
+
+  /// Assets for imagesTest15
+  /// asset/images/test15.png
+  static const String imagesTest15 = "asset/images/test15.png";
 
   /// Assets for imagesTest2
   /// asset/images/test2.png

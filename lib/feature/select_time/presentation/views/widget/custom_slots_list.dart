@@ -1,4 +1,4 @@
-import 'package:doctor_app/feature/select_time/presentation/views/widget/uc_active_available_item.dart';
+import 'package:doctor_app/feature/select_time/presentation/views/widget/un_active_and_active_available_item.dart';
 import 'package:flutter/material.dart';
 
 class CustomSlotsList extends StatefulWidget {

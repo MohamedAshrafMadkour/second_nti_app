@@ -197,4 +197,48 @@ class AppStyles {
       letterSpacing: -0.30,
     );
   }
+
+  static TextStyle textLight16(BuildContext context) {
+    return const TextStyle(
+      fontSize: 16,
+      fontFamily: 'Rubik',
+      fontWeight: FontWeight.w300,
+      letterSpacing: -0.30,
+    );
+  }
+
+  static TextStyle textMedium13(BuildContext context) {
+    return const TextStyle(
+      fontSize: 13,
+      fontFamily: 'Rubik',
+      fontWeight: FontWeight.w500,
+      letterSpacing: -0.30,
+    );
+  }
+
+  static TextStyle textLight50(BuildContext context) {
+    return const TextStyle(
+      fontSize: 50,
+      fontFamily: 'Rubik',
+      fontWeight: FontWeight.w300,
+    );
+  }
+
+  static TextStyle textMedium38(BuildContext context) {
+    return const TextStyle(
+      fontSize: 38,
+      fontFamily: 'Rubik',
+      fontWeight: FontWeight.w500,
+      letterSpacing: -0.30,
+    );
+  }
+
+  static TextStyle textMedium24(BuildContext context) {
+    return const TextStyle(
+      fontSize: 24,
+      fontFamily: 'Rubik',
+      fontWeight: FontWeight.w500,
+      letterSpacing: -0.30,
+    );
+  }
 }

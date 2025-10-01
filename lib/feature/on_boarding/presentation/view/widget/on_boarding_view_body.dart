@@ -2,7 +2,7 @@ import 'package:doctor_app/core/constant/app_colors.dart';
 import 'package:doctor_app/core/constant/app_images.dart';
 import 'package:doctor_app/core/utils/app_styles.dart';
 import 'package:doctor_app/core/widget/custom_button.dart';
-import 'package:doctor_app/feature/main/presentation/view/main_view.dart';
+import 'package:doctor_app/feature/auth/register/presentation/view/register_view.dart';
 import 'package:doctor_app/feature/on_boarding/data/model/on_boarding_model.dart';
 import 'package:doctor_app/feature/on_boarding/presentation/view/widget/custom_page_view_list.dart';
 import 'package:flutter/material.dart';
@@ -62,7 +62,7 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
                         onBoardingList.length - 1) {
                       Navigator.pushNamedAndRemoveUntil(
                         context,
-                        MainView.routeName,
+                        RegisterView.routeName,
                         (route) => false,
                       );
                     } else {
@@ -77,7 +77,7 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
                   onTap: () {
                     Navigator.pushNamedAndRemoveUntil(
                       context,
-                      MainView.routeName,
+                      RegisterView.routeName,
                       (route) => false,
                     );
                   },

@@ -1,3 +1,8 @@
+import 'package:doctor_app/feature/appointment/presentation/view/first_appointment_view.dart';
+import 'package:doctor_app/feature/appointment/presentation/view/second_appointment_view.dart';
+import 'package:doctor_app/feature/auth/login/presentation/view/login_view.dart';
+import 'package:doctor_app/feature/auth/register/presentation/view/register_view.dart';
+import 'package:doctor_app/feature/details/presentation/view/details_view.dart';
 import 'package:doctor_app/feature/main/presentation/view/main_view.dart';
 import 'package:doctor_app/feature/main/presentation/view/widget/custom_live_details.dart';
 import 'package:doctor_app/feature/on_boarding/presentation/view/on_boarding_view.dart';
@@ -28,8 +33,20 @@ Route<dynamic> onGenerateRoute(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) => const SecondSelectTimeView(),
       );
+    case DetailsView.routeName:
+      return MaterialPageRoute(builder: (context) => const DetailsView());
     case PopularDoctorView.routeName:
       return MaterialPageRoute(builder: (context) => const PopularDoctorView());
+    case AppointmentView.routeName:
+      return MaterialPageRoute(builder: (context) => const AppointmentView());
+    case SecondAppointmentView.routeName:
+      return MaterialPageRoute(
+        builder: (context) => const SecondAppointmentView(),
+      );
+    case RegisterView.routeName:
+      return MaterialPageRoute(builder: (context) => const RegisterView());
+    case LoginView.routeName:
+      return MaterialPageRoute(builder: (context) => const LoginView());
     default:
       return MaterialPageRoute(
         builder: (context) =>

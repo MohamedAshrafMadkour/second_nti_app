@@ -13,12 +13,12 @@ class CommentTextField extends StatelessWidget {
       onChanged: onChanged,
       keyboardType: TextInputType.text,
       decoration: InputDecoration(
-        prefixIcon: Image.asset(AppIcons.commentIcon, height: 16),
+        prefixIcon: Image.asset(AppIcons.iconsComment, height: 16),
         fillColor: Colors.white,
         filled: true,
         suffixIcon: FittedBox(
           fit: BoxFit.scaleDown,
-          child: SvgPicture.asset(AppIcons.imogeIcon),
+          child: SvgPicture.asset(AppIcons.iconsImogeIcon),
         ),
         hintStyle: AppStyles.textRegular15(
           context,

@@ -19,13 +19,29 @@ class AppIcons {
   /// asset/icons/close_icon.svg
   static const String iconsCloseIcon = "asset/icons/close_icon.svg";
 
+  /// Assets for iconsComment
+  /// asset/icons/comment.png
+  static const String iconsComment = "asset/icons/comment.png";
+
   /// Assets for iconsEyeIcon
   /// asset/icons/eye_icon.svg
   static const String iconsEyeIcon = "asset/icons/eye_icon.svg";
 
+  /// Assets for iconsFacebookIcon
+  /// asset/icons/facebook_icon.svg
+  static const String iconsFacebookIcon = "asset/icons/facebook_icon.svg";
+
+  /// Assets for iconsGoogleIcon
+  /// asset/icons/google_icon.svg
+  static const String iconsGoogleIcon = "asset/icons/google_icon.svg";
+
   /// Assets for iconsHeartIcon
   /// asset/icons/heart_icon.svg
   static const String iconsHeartIcon = "asset/icons/heart_icon.svg";
+
+  /// Assets for iconsImogeIcon
+  /// asset/icons/imoge_icon.svg
+  static const String iconsImogeIcon = "asset/icons/imoge_icon.svg";
 
   /// Assets for iconsSearchIcon
   /// asset/icons/search_icon.svg
@@ -52,8 +68,6 @@ class AppIcons {
   /// Assets for iconsUnActiveHome
   /// asset/icons/un_active_home.svg
   static const String iconsUnActiveHome = "asset/icons/un_active_home.svg";
-  static const String commentIcon = "asset/icons/comment.png";
-  static const String imogeIcon = 'asset/icons/imoge_icon.svg';
 
   /// Assets for iconsUnActiveMessageIcon
   /// asset/icons/un_active_message_icon.svg

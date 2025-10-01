@@ -1,8 +1,10 @@
-import 'package:doctor_app/core/utils/app_router.dart';
-import 'package:doctor_app/feature/splash/presentation/view/splash_view.dart';
+import 'package:doctor_app/core/helper/get_it_method.dart';
+import 'package:doctor_app/core/task/presentation/view/task_view.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  getItSetup();
   runApp(const DoctorApp());
 }
 
@@ -11,14 +13,18 @@ class DoctorApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      initialRoute: SplashView.routeName,
-      onGenerateRoute: onGenerateRoute,
+    // return MaterialApp(
+    //   initialRoute: SplashView.routeName,
+    //   onGenerateRoute: onGenerateRoute,
+    //   debugShowCheckedModeBanner: false,
+    //   theme: ThemeData(
+    //     scaffoldBackgroundColor: Colors.white,
+    //     fontFamily: 'Rubik',
+    //   ),
+    // );
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        scaffoldBackgroundColor: Colors.white,
-        fontFamily: 'Rubik',
-      ),
+      home: TaskView(),
     );
   }
 }
